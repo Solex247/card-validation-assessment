@@ -2,6 +2,14 @@
 
 A backend service that validates card numbers using the Luhn algorithm, built with NestJS and TypeScript.
 
+**Live API:** https://card-validation-assessment.onrender.com
+**Live frontend:** https://card-validation-frontend.vercel.app
+
+> Note: the backend runs on Render's free tier, which spins down after
+> inactivity. The first request after a period of no traffic can take up to
+> ~50 seconds to respond while the instance wakes up.
+
+...
 ## Tech Stack
 - Node.js + TypeScript (`strict: true`)
 - NestJS
@@ -16,6 +24,7 @@ npm run start:dev
 ```
 
 The server runs on `http://localhost:3000` by default.
+The live link of this server = https://card-validation-assessment.onrender.com
 
 ## Running Tests
 
@@ -26,6 +35,7 @@ npm run test
 ## API
 
 ### `POST /card/validate`
+https://card-validation-assessment.onrender.com/card/validate
 
 **Request body:**
 ```json
